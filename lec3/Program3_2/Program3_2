@@ -3,7 +3,6 @@
 #include <errno.h>
 #include <sys/wait.h>
 #include <sys/types.h>
-
 int main() {
   int pid = fork();
   switch (pid) {
