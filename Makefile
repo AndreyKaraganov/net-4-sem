@@ -2,27 +2,27 @@ all: lec2 lec3 lec4
 
 lec2: Program2
 
-lec3: Program3 Program33
+lec3: Program3_1 Program3_2
 
-lec4: Program4 Program44 Program444
+lec4: Program4_1 Program4_2 Program4_3
 
 Program2
-	gcc 'lec2/program2/program2.c' -o 'lec2/program2/Program2.out'
+	gcc 'lec2/Program2/Program2.c' -o 'lec2/Program2/Program2.out'
 
 Program3:
-	gcc 'lec3/program3/program3.c' -o 'lec3/program3/Program3.out'
+	gcc 'lec3/Program3_1/Program3_1.c' -o 'lec3/Program3_1/Program3_1.out'
 
 Program3_2:
-	gcc 'lec3/program33/program33.c' -o 'lec3/program33/Program33.out'
+	gcc 'lec3/Program3_2/Program3_2.c' -o 'lec3/Program3_2/Program3_2.out'
 
 Program4_1:
-	gcc 'lec4/program4/program4.c' -o 'lec4/program4/Program4.out'
+	gcc 'lec4/Program4_1/Program4_1.c' -o 'lec4/Program4_1/Program4_1.out'
 
 Program4_2:
-	gcc 'lec4/program44/program44.c' -o 'lec4/program44/Program44.out'
+	gcc 'lec4/Program4_2/Program4_2.c' -o 'lec4/Program4_2/Program4_2.out'
 
 Program4_3:
-	gcc 'lec4/program444/program444.c' -o 'lec4/program444/Program444.out'
+	gcc 'lec4/Program4_3/Program4_3.c' -o 'lec4/Program4_3/Program4_3.out'
 
 clear:
 	rm -rf lec?/program*/*.out
