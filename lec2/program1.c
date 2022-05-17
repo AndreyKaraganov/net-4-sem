@@ -2,7 +2,6 @@
 #include <stdio.h>
 
 int main() {
-
   int * array = NULL;
   unsigned length, i;
   printf("Enter length of array: ");
